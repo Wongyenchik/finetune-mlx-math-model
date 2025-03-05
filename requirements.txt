@@ -1,0 +1,10 @@
+mlx_lm
+streamlit
+datasets
+huggingface-hub
+dotenv
+boto3
+textstat
+tiktoken
+mlflow
+pandas
