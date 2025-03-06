@@ -8,3 +8,4 @@ textstat
 tiktoken
 mlflow
 pandas
+openai
