@@ -17,6 +17,8 @@ The main components of this project include:
 
 When you successfully run the finetune-model.ipynb file, a few new directories will appear in your repository:
 
+![repository](https://github.com/Wongyenchik/finetune-mlx-math-model/blob/main/screenshots/Screenshot%202025-03-06%20at%209.09.41%20PM.png?raw=true)
+
 - Mlruns: Stores previous ML training runs, details, and logs via MLFlow.
 - Adapters: Contains the LoRA adapter layers from the fine-tuned model.
 - Mlx_model: The quantized model from Hugging Face’s gemma-2-2b model.
@@ -70,9 +72,13 @@ To test the model that I have already trained and pushed to Hugging Face, you ca
    `streamlit run streamlit/app.py`
 2. Interact with the model: Once the app is running, you can enter your inputs and get real-time responses from the fine-tuned model.
 
+![streamlit](https://github.com/Wongyenchik/finetune-mlx-math-model/blob/main/screenshots/Screenshot%202025-03-06%20at%209.10.39%20PM.png?raw=true)
+
 ## Results
 
 ### Evaluation Using MLFlow
+
+![eval_results_table](https://github.com/Wongyenchik/finetune-mlx-math-model/blob/0ea1facea36518329f714806e4a54dbd02b30a19/screenshots/Screenshot%202025-03-06%20at%2010.22.10%20PM.png?raw=true)
 
 This project uses MLFlow to evaluate the fine-tuned model:
 
