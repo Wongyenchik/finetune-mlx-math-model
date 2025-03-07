@@ -1,12 +1,12 @@
 # Fine-tuned LLM Model using MLX on Apple Silicon
 
-This repository contains a fine-tuned LLM based on the Hugging Face gemma-2-2b model. The fine-tuning process leverages the MLX framework, which supports quantization and fine-tuning on Apple Silicon’s unified memory architecture. The LoRA (Low-Rank Adaptation) method is used to train a few layers, enabling the model to achieve high performance with minimal resource requirements. This README will guide you through understanding the project structure, setup, and how to run and test the model.
+This repository contains a fine-tuned LLM based on the [Hugging Face gemma-2-2b model](https://huggingface.co/google/gemma-2-2b). The fine-tuning process leverages the MLX framework, which supports quantization and fine-tuning on Apple Silicon’s unified memory architecture. The LoRA (Low-Rank Adaptation) method is used to train a few layers, enabling the model to achieve high performance with minimal resource requirements. This README will guide you through understanding the project structure, setup, and how to run and test the model.
 
 ## Project Overview
 
 The main components of this project include:
 
-- **Data Preprocessing**: Converts the MATH-500 dataset from Hugging Face into JSONL format as required by the MLX framework, inserting it with the prepared prompt template.
+- **Data Preprocessing**: Converts the [MATH-500 dataset](https://huggingface.co/datasets/HuggingFaceH4/MATH-500) from Hugging Face into JSONL format as required by the MLX framework, inserting it with the prepared prompt template.
 - **Quantization** of the gemma-2-2b model using MLX.
 - **Fine-tuning** using the LoRA method with the MATH-500 dataset from Hugging Face.
 - **Data Storage**: Stores both the dataset and LoRA adapter layers in Amazon S3.
@@ -66,7 +66,7 @@ Open the `finetune-model.ipynb` file and execute all the cells. This will:
 
 ### Testing the Fine-tuned Model
 
-To test the model that I have already trained and pushed to Hugging Face, you can use the provided Streamlit app:
+To test the [model](https://huggingface.co/yenchik/mlx-gemma-2-2b-it-math) that I have already trained and pushed to Hugging Face, you can use the provided Streamlit app:
 
 1. Run the Streamlit app:
    `streamlit run streamlit/app.py`
